@@ -56,9 +56,19 @@ public class App
         String textonbutton=driver.findElement(By.xpath("//input[@value='Search']")).getAttribute("type");
         System.out.println(textonbutton);
         Thread.sleep(3000);
-        File srcScreenShot=driver.findElement(By.xpath("//div[@id='sidebar-right-1']")).getScreenshotAs(OutputType.FILE);
-        FileHandler.copy(srcScreenShot, new File(System.getProperty("user.dir")+"\\ss.png"));
-        driver.quit();
+        //4.command to capture Screenshot of the specific web element 
+//       
+//        File srcScreenShot=driver.findElement(By.xpath("//div[@id='sidebar-right-1']")).getScreenshotAs(OutputType.FILE);
+//        FileHandler.copy(srcScreenShot, new File(System.getProperty("user.dir")+"\\ss.png"));
+        //5.To get the page source i.e html css and scipt we user getPageSource command 
+//        System.out.println(driver.getPageSource());
+        driver.navigate().to("http://www.google.co.in");
+        driver.navigate().back();
+        Thread.sleep(2000);
+        driver.navigate().forward();
+        
+//        driver.quit();
+        
         
         
         
