@@ -29,8 +29,8 @@ public class App
       WebDriverManager.chromedriver().setup();
       WebDriver driver=new ChromeDriver();
       driver.manage().window().maximize(); //1 .for maximizing the window 
-      driver.get("https://omayo.blogspot.com/");
-   
+//      driver.get("https://omayo.blogspot.com/");
+   driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 //      driver.manage().window().fullscreen(); //2. for fullscreen window
       //3.Setting size of the window.
       //for this we need to create a Dimension class object
@@ -62,10 +62,10 @@ public class App
 //        FileHandler.copy(srcScreenShot, new File(System.getProperty("user.dir")+"\\ss.png"));
         //5.To get the page source i.e html css and scipt we user getPageSource command 
 //        System.out.println(driver.getPageSource());
-        driver.navigate().to("http://www.google.co.in");
-        driver.navigate().back();
-        Thread.sleep(2000);
-        driver.navigate().forward();
+//        driver.navigate().to("http://www.google.co.in");
+//        driver.navigate().back();
+//        Thread.sleep(2000);
+//        driver.navigate().forward();
         
 //        driver.quit();
         
